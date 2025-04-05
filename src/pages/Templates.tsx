@@ -20,7 +20,7 @@ const templates = [
     id: 2,
     name: "Creative Portfolio",
     description: "Stand out with this design-focused layout.",
-    image: "https://images.unsplash.com/photo-1517436073-3b1b1cc54f84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJlc3VtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVzdW1lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     category: "creative",
     price: 29,
     features: ["Portfolio Section", "Unique Layout", "Visual Focus"]

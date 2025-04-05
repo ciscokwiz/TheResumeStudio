@@ -13,6 +13,13 @@ import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Sitemap from "./pages/Sitemap";
+import Testimonials from "./pages/Testimonials";
+import Dashboard from "./pages/Dashboard";
+import Checkout from "./pages/Checkout";
+import PaymentSuccess from "./pages/PaymentSuccess";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +39,13 @@ const App = () => (
           <Route path="/auth/signup" element={<Signup />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/product/template/:id" element={<Product />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/payment-success" element={<PaymentSuccess />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

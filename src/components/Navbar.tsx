@@ -40,8 +40,8 @@ const Navbar = () => {
         )}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
-          <Link to="/" className="text-xl md:text-2xl font-medium tracking-tight">
-            The Resume Studio Co.
+          <Link to="/" className="text-xl md:text-2xl font-medium tracking-tight flex items-center">
+            The Resume <span className="inline-flex relative mx-1">Studio <span className="absolute inset-0 bg-primary/10 animate-pulse rounded-sm"></span></span> Co.
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">

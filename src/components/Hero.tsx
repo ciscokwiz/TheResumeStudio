@@ -24,7 +24,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <a 
-              href="#services" 
+              href="/services" 
               className={cn(
                 "px-6 py-3 bg-primary text-white rounded-full",
                 "flex items-center justify-center gap-2",
@@ -36,7 +36,7 @@ const Hero = () => {
             </a>
             
             <a 
-              href="#templates" 
+              href="/templates" 
               className={cn(
                 "px-6 py-3 bg-transparent border border-gray-200",
                 "text-primary rounded-full hover:bg-gray-50",

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link, useNavigate } from "react-router-dom";
 
 const templates = [
   {
@@ -38,6 +39,7 @@ const templates = [
 
 const Templates = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
   
   const showPrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? templates.length - 3 : prev - 1));
@@ -45,6 +47,10 @@ const Templates = () => {
   
   const showNext = () => {
     setCurrentIndex((prev) => (prev === templates.length - 3 ? 0 : prev + 1));
+  };
+  
+  const handleTemplateClick = (id: number) => {
+    navigate(`/auth/login?redirect=/product/template/${id}`);
   };
   
   return (
@@ -64,7 +70,7 @@ const Templates = () => {
                  style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}>
               {templates.map((template) => (
                 <div key={template.id} className="min-w-[33.33%] px-3">
-                  <div className="glass rounded-2xl overflow-hidden">
+                  <div className="glass rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTemplateClick(template.id)}>
                     <div className="h-64 overflow-hidden">
                       <img 
                         src={template.image} 
@@ -75,12 +81,11 @@ const Templates = () => {
                     <div className="p-6">
                       <h3 className="text-xl font-medium mb-2">{template.name}</h3>
                       <p className="text-muted-foreground mb-4">{template.description}</p>
-                      <a 
-                        href="#" 
+                      <span 
                         className="flex items-center text-primary text-sm gap-2 hover:underline"
                       >
                         View Template <ExternalLink size={14} />
-                      </a>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -105,7 +110,7 @@ const Templates = () => {
           {/* Mobile Grid */}
           <div className="md:hidden grid grid-cols-1 gap-6">
             {templates.slice(0, 3).map((template) => (
-              <div key={template.id} className="glass rounded-2xl overflow-hidden">
+              <div key={template.id} className="glass rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTemplateClick(template.id)}>
                 <div className="h-48 overflow-hidden">
                   <img 
                     src={template.image} 
@@ -116,12 +121,11 @@ const Templates = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-medium mb-2">{template.name}</h3>
                   <p className="text-muted-foreground mb-4">{template.description}</p>
-                  <a 
-                    href="#" 
+                  <span 
                     className="flex items-center text-primary text-sm gap-2 hover:underline"
                   >
                     View Template <ExternalLink size={14} />
-                  </a>
+                  </span>
                 </div>
               </div>
             ))}
@@ -129,8 +133,8 @@ const Templates = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <a 
-            href="#" 
+          <Link
+            to="/templates" 
             className={cn(
               "px-6 py-3 bg-transparent border border-gray-200",
               "text-primary rounded-full hover:bg-gray-50 inline-flex",
@@ -139,7 +143,7 @@ const Templates = () => {
           >
             View All Templates
             <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

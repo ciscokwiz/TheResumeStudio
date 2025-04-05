@@ -11,28 +11,65 @@ const products = {
   "resume-writing": {
     title: "Resume Writing",
     description: "Professional resume writing service tailored to your career goals.",
-    price: 149,
+    price: 40,
     features: [
       "ATS-Optimized Content",
       "Professional Layout",
       "Targeted Keywords",
       "Achievement-Focused Content",
       "Modern Design",
-      "2 Revisions Included"
+      "3 Revisions Included"
     ],
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdW1lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
   },
   "linkedin-optimization": {
     title: "LinkedIn Optimization",
     description: "Strategic profile enhancements to increase visibility and attract recruiters.",
-    price: 129,
+    price: 40,
     features: [
       "Keyword-Rich Profile",
       "Optimized Headline",
       "Compelling Summary",
       "Skills Assessment",
       "Content Strategy",
-      "Networking Recommendations"
+      "Networking Recommendations",
+      "Revisions Included"
+    ],
+    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  "career-consultancy": {
+    title: "Career Consultancy",
+    description: "Personalized guidance to navigate career transitions and advancement opportunities.",
+    price: 65,
+    features: [
+      "45-Minutes Consultation",
+      "Career Path Planning",
+      "Industry Insights",
+      "Follow-up Session",
+    ],
+    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  "personal-branding": {
+    title: "Personal Branding",
+    description: "Define and communicate your professional identity across all platforms.",
+    price: 165,
+    features: [
+      "Brand Strategy", 
+      "Visual Identity",
+      "Digital Presence",
+      "Content Strategy",
+    ],
+    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  "linkedin-strategy": {
+    title: "LinkedIn Strategy",
+    description: "Comprehensive approach to building your professional network and online presence.",
+    price: 125,
+    features: [
+      "Network Analysis",
+      "Content Calendar",
+      "Engagement Plan",
+      "Performance Metrics",
     ],
     image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
   },
@@ -41,7 +78,7 @@ const products = {
 
 // Mock template data
 const templates = {
-  "1": {
+  "executive-pro": {
     title: "Executive Pro Template",
     description: "Refined template for senior leadership positions.",
     price: 39,
@@ -55,7 +92,7 @@ const templates = {
     ],
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdW1lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
   },
-  "2": {
+  "creative-portfolio": {
     title: "Creative Portfolio Template",
     description: "Stand out with this design-focused layout.",
     price: 29,
@@ -111,12 +148,12 @@ const Product = () => {
       
       <div className="pt-24 section-padding">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="glass rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
+            <div className="glass h-full w-full flex justify-center items-center">
               <img 
                 src={product.image} 
                 alt={product.title} 
-                className="w-full h-full object-cover"
+                className="h-[28rem] w-[30rem] rounded-2xl"
               />
             </div>
             

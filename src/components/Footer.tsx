@@ -1,5 +1,6 @@
 
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const Footer = () => {
@@ -33,22 +34,22 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-medium mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Resume Writing</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">LinkedIn Optimization</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Career Consultancy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Personal Branding</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Resume Templates</a></li>
+              <li><Link to="/services" className="text-white/70 hover:text-white transition-colors">Resume Writing</Link></li>
+              <li><Link to="/services" className="text-white/70 hover:text-white transition-colors">LinkedIn Optimization</Link></li>
+              <li><Link to="/services" className="text-white/70 hover:text-white transition-colors">Career Consultancy</Link></li>
+              <li><Link to="/services" className="text-white/70 hover:text-white transition-colors">Personal Branding</Link></li>
+              <li><Link to="/templates" className="text-white/70 hover:text-white transition-colors">Resume Templates</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-medium mb-4">Company</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-white/70 hover:text-white transition-colors">About Us</a></li>
+              <li><Link to="/about" className="text-white/70 hover:text-white transition-colors">About Us</Link></li>
               <li><a href="#" className="text-white/70 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#testimonials" className="text-white/70 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Terms of Service</a></li>
+              <li><Link to="/testimonials" className="text-white/70 hover:text-white transition-colors">Testimonials</Link></li>
+              <li><Link to="/privacy" className="text-white/70 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="text-white/70 hover:text-white transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
           
@@ -81,9 +82,9 @@ const Footer = () => {
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
-              <li><a href="#" className="text-sm text-white/70 hover:text-white transition-colors">Privacy</a></li>
-              <li><a href="#" className="text-sm text-white/70 hover:text-white transition-colors">Terms</a></li>
-              <li><a href="#" className="text-sm text-white/70 hover:text-white transition-colors">Sitemap</a></li>
+              <li><Link to="/privacy" className="text-sm text-white/70 hover:text-white transition-colors">Privacy</Link></li>
+              <li><Link to="/terms" className="text-sm text-white/70 hover:text-white transition-colors">Terms</Link></li>
+              <li><Link to="/sitemap" className="text-sm text-white/70 hover:text-white transition-colors">Sitemap</Link></li>
             </ul>
           </div>
         </div>

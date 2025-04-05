@@ -12,15 +12,15 @@ const services = [
     title: "Resume Writing",
     description: "Custom, ATS-optimized resumes crafted to highlight your unique value proposition.",
     icon: FileText,
-    price: 149,
-    features: ["ATS Optimization", "Professional Layout", "Keyword Enhancement", "1 Revision"]
+    price: 40,
+    features: ["ATS Optimization", "Professional Layout", "Keyword Enhancement", "3 Revision"]
   },
   {
     id: "linkedin-optimization",
     title: "LinkedIn Optimization",
     description: "Strategic profile enhancements to increase visibility and attract recruiters.",
     icon: Linkedin,
-    price: 129,
+    price: 40,
     features: ["Profile Enhancement", "Summary Writing", "Keyword Integration", "Engagement Strategy"]
   },
   {
@@ -28,31 +28,23 @@ const services = [
     title: "Career Consultancy",
     description: "Personalized guidance to navigate career transitions and advancement opportunities.",
     icon: Compass,
-    price: 199,
-    features: ["1-Hour Consultation", "Career Path Planning", "Industry Insights", "Follow-up Session"]
+    price: 65,
+    features: ["45-Minutes Consultation", "Career Path Planning", "Industry Insights", "Follow-up Session"]
   },
   {
     id: "personal-branding",
     title: "Personal Branding",
     description: "Define and communicate your professional identity across all platforms.",
     icon: UserRound,
-    price: 249,
+    price: 165,
     features: ["Brand Strategy", "Visual Identity", "Digital Presence", "Content Strategy"]
-  },
-  {
-    id: "resume-templates",
-    title: "Resume Templates",
-    description: "Premium, customizable templates designed for maximum impact and readability.",
-    icon: PenTool,
-    price: 29,
-    features: ["Instant Download", "ATS Compatible", "Easy Customization", "Multiple Formats"]
   },
   {
     id: "linkedin-strategy",
     title: "LinkedIn Strategy",
     description: "Comprehensive approach to building your professional network and online presence.",
     icon: BarChart4,
-    price: 179,
+    price: 125,
     features: ["Network Analysis", "Content Calendar", "Engagement Plan", "Performance Metrics"]
   }
 ];
