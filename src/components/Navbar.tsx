@@ -41,7 +41,11 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex items-center justify-between px-6">
           <Link to="/" className="text-xl md:text-2xl font-medium tracking-tight flex items-center">
-            The Resume <span className="inline-flex relative mx-1">Studio <span className="absolute inset-0 bg-primary/10 animate-pulse rounded-sm"></span></span> Co.
+            The Resume <span className="inline-flex relative mx-1">
+              <span className="relative z-10">Studio</span>
+              <span className="absolute inset-0 bg-primary/10 rounded-sm animate-[pulse_1.5s_ease-in-out_infinite]"></span>
+              <span className="absolute inset-0 border-b-2 border-primary transform animate-[bounce_2s_ease-in-out_infinite] opacity-70"></span>
+            </span> Co.
           </Link>
           
           <div className="hidden md:flex items-center space-x-6">

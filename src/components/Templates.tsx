@@ -50,7 +50,7 @@ const Templates = () => {
   };
   
   const handleTemplateClick = (id: number) => {
-    navigate(`/auth/login?redirect=/product/template/${id}`);
+    navigate(`/product/template/${id}`);
   };
   
   return (
